@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
   "name": "Azure DevOps URL Redirector",
-  "short_name": "ADO Redirector",
+  "short_name": "ADO Redirect",
   "version": "1.0.0",
-  "description": "Automatically redirects legacy Azure DevOps URLs (org.visualstudio.com) to the modern format (dev.azure.com/org) before page load. Seamlessly updates bookmarks and links to use the current Azure DevOps URL structure, ensuring fast access without manual URL editing.",
+  "description": "Automatically redirects legacy Azure DevOps URLs (*.visualstudio.com) to the modern format (dev.azure.com).",
   "author": "Kevin Klinke",
   "homepage_url": "https://github.com/kevinklinke/ado-redirector",
   "permissions": [
