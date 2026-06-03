@@ -10,6 +10,33 @@
     },
     "condition": {
       "regexFilter": "^https?://([^.]+)\\.visualstudio\\.com/(?:DefaultCollection/)?(.*)",
+      "excludedRequestDomains": [
+        "code.visualstudio.com",
+        "developercommunity.visualstudio.com",
+        "manage.visualstudio.com",
+        "marketplace.visualstudio.com",
+        "my.visualstudio.com",
+        "vssps.visualstudio.com",
+        "vsstatus.visualstudio.com",
+        "www.visualstudio.com"
+      ],
+      "resourceTypes": [
+        "main_frame",
+        "sub_frame"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 2,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "transform": { "host": "aex.dev.azure.com" }
+      }
+    },
+    "condition": {
+      "requestDomains": ["app.vsaex.visualstudio.com"],
       "resourceTypes": [
         "main_frame",
         "sub_frame"
